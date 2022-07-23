@@ -14,7 +14,7 @@ class MainScreen extends StatelessWidget {
         return Scaffold(
           backgroundColor: backgroundColor1,
           appBar: PreferredSize(
-            preferredSize: const Size.fromHeight(175),
+            preferredSize: const Size.fromHeight(168),
             child: Container(
               width: double.infinity,
               decoration: const BoxDecoration(
@@ -25,6 +25,9 @@ class MainScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: const <Widget>[
+                  SizedBox(
+                    height: 30,
+                  ),
                   Text(
                     'Yelofilms',
                     style: TextStyle(
@@ -258,7 +261,6 @@ class TourismPlaceList extends StatelessWidget {
                                 const SizedBox(width: 8.0),
                                 Text(
                                   place.movieType,
-                                  // style: informationTextStyle,
                                 ),
                               ],
                             ),
@@ -277,3 +279,4 @@ class TourismPlaceList extends StatelessWidget {
     );
   }
 }
+
